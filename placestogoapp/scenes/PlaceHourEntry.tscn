@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://rrnmfye0qhyw"]
+
+[ext_resource type="Script" uid="uid://cdubbspq38kr1" path="res://scripts/PlaceHourEntry.gd" id="1_gx2b8"]
+
+[node name="PlaceHourEntry" type="HBoxContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 31.0
+grow_horizontal = 2
+script = ExtResource("1_gx2b8")
+
+[node name="Weekday" type="OptionButton" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OpeningTime" type="LineEdit" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ClosingTime" type="LineEdit" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RemoveButton" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "remove"

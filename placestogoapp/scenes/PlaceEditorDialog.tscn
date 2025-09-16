@@ -1,0 +1,77 @@
+[gd_scene load_steps=2 format=3 uid="uid://nlvyffdtnfvm"]
+
+[ext_resource type="Script" uid="uid://cj0ijwr4ctybr" path="res://scripts/PlaceEditorDialog.gd" id="1_k2y8s"]
+
+[node name="PlaceEditorDialog" type="Window"]
+mode = 2
+title = "Place Editor Dialog"
+size = Vector2i(300, 600)
+popup_window = true
+min_size = Vector2i(300, 600)
+script = ExtResource("1_k2y8s")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NameLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Name"
+
+[node name="NameLineEdit" type="LineEdit" parent="VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Name of Place"
+
+[node name="CategoryLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Category"
+
+[node name="CategoryOptionButton" type="OptionButton" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="NotesLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Notes"
+
+[node name="NotesTextEdit" type="TextEdit" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+placeholder_text = "Add notes here"
+
+[node name="TagsLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Tag(s)"
+
+[node name="TagsLineEdit" type="LineEdit" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+placeholder_text = "add tags separated by a comma"
+
+[node name="HoursLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Hours"
+
+[node name="HoursList" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="AddHourButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Add Hours"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_direction = 3
+layout_mode = 2
+
+[node name="CancelButton" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Cancel"
+
+[node name="OKButton" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Save"

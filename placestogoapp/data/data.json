@@ -1,0 +1,60 @@
+{
+	"categories": [
+		"Eat",
+		"Play",
+		"Shop"
+	],
+	"places": [
+		{
+			"place_category": "Eat",
+			"place_hours": [
+				{
+					"close": "9p",
+					"open": "6a",
+					"weekday": "Mon"
+				}
+			],
+			"place_name": "test",
+			"place_notes": "long trip test note",
+			"place_tags": [
+				"test"
+			]
+		},
+		{
+			"place_category": "Eat",
+			"place_hours": [],
+			"place_name": "test2",
+			"place_notes": "test 2 notes",
+			"place_tags": [
+				"test 2",
+				"test 3"
+			]
+		},
+		{
+			"place_category": "Eat",
+			"place_hours": [],
+			"place_name": "test 3",
+			"place_notes": "note test 3",
+			"place_tags": [
+				"test 3"
+			]
+		},
+		{
+			"place_category": "Eat",
+			"place_hours": [],
+			"place_name": "test 4",
+			"place_notes": "note test 4",
+			"place_tags": [
+				"test 1",
+				"test 2",
+				"test 3"
+			]
+		}
+	],
+	"tags": [
+		"test",
+		"test 2",
+		"test 3",
+		"test 1"
+	]
+}
